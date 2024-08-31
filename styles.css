@@ -1,0 +1,154 @@
+/* Fonts & Basic Resets */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    font-size: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 5px rgba(0, 188, 212, 0.7);
+}
+
+main {
+    padding: 40px 0;
+}
+
+main h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #004e92;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #004e92;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+main p, main ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-details li, .skill ul, .presentation, .course, .volunteer {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.contact-details li::before, .skill ul li::before, .presentation::before, .course::before, .volunteer::before {
+    content: "•";
+    color: #004e92;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer {
+    background-color: #000428;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+    color: #f5f5f5;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
